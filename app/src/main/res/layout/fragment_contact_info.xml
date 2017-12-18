@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/phone_book"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="66dp"
+        app:srcCompat="@drawable/phone_book"
+        android:layout_below="@+id/imageView38"
+        android:layout_alignLeft="@+id/imageView38"
+        android:layout_alignStart="@+id/imageView38" />
+
+    <TextView
+
+        android:textSize="20dp"
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Book"
+        android:layout_below="@+id/imageView38"
+        android:layout_alignLeft="@+id/textView61"
+        android:layout_alignStart="@+id/textView61" />
+
+    <TextView
+
+        android:textSize="20dp"
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Era Book"
+        android:layout_below="@+id/imageView39"
+        android:layout_alignRight="@+id/imageView39"
+        android:layout_alignEnd="@+id/imageView39"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+</RelativeLayout>

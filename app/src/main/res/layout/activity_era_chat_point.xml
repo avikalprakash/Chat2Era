@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10sp"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/profile"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="0.81"
+
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="0.11"
+            android:layout_gravity="center"
+            android:text="200"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/notification"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Add friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="0.11"
+            android:layout_gravity="center"
+            android:text="256"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/friends"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="3"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Emotion Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="0.11"
+            android:layout_gravity="center"
+            android:text="756"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+
+    </View>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+            <TextView
+                android:text="4"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Virtual Gift Send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.11"
+                android:layout_gravity="center"
+                android:text="256"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+    <LinearLayout
+        android:id="@+id/tellfriend"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Share in Facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="0.11"
+            android:layout_gravity="center"
+            android:text="456"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+    <LinearLayout
+        android:id="@+id/meotalk"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="6"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="EraLive Activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="0.11"
+            android:layout_gravity="center"
+            android:text="756"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/syncphone"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+            <TextView
+                android:text="7"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Games Download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.11"
+                android:layout_gravity="center"
+                android:text="756"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+
+            <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+
+            <LinearLayout
+                android:id="@+id/taskcomp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.99"
+                    android:padding="5dp"
+                    android:text="Task/Event Completed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.11"
+                    android:text="756" />
+            </LinearLayout>
+
+            <LinearLayout
+        android:background="@drawable/text_background_white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.74"
+                android:gravity="center"
+                android:text="Points Earned Today " />
+            <TextView
+                android:layout_weight="0.11"
+                android:layout_gravity="center"
+                android:text="7556"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorTransparent"
+            android:layout_height="1dp">
+
+        </View>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/erapoint"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:text="Toatal EraChat Points"
+                android:layout_weight="0.85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.11"
+                android:layout_gravity="center"
+                android:text="7556"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+            <Button
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_primary"
+                android:layout_gravity="right"
+                android:id="@+id/button9"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:text="EraChat Website" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

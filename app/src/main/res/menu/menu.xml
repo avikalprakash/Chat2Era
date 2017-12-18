@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:checked="true"
+        android:icon="@drawable/icon_chat48x48"
+        android:title="@string/text_favorites" />
+
+    <item
+        android:id="@+id/action_music"
+        android:icon="@drawable/icon_contact48x48"
+        android:title="@string/text_music" />
+    <item
+        android:id="@+id/action_schedules"
+        android:icon="@drawable/icon_more"
+        android:title="@string/text_schedules" />
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/icon_me48x48"
+        android:title="@string/cm" />
+</menu>

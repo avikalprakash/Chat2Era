@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lue.erachat.Activity.CreateTeam.Createteam">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:src="@drawable/profile_big"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="21dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textInputEditText"
+        android:layout_alignStart="@+id/textInputEditText" />
+    <android.support.design.widget.TextInputEditText
+        android:background="@drawable/text_background_white"
+        android:layout_margin="20dp"
+        android:hint="Create Team name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textInputEditText" />
+
+    <TextView
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Please Provide Group Subject and Optional Team Icon"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10sp"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+<!--<view
+    android:layout_width="match_parent"
+    android:background="@color/colorTransparent"
+    android:layout_height="1sp">
+
+</view>-->
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:id="@+id/profile"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+      <TextView
+          android:layout_weight="1"
+
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="@string/profile"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+
+    </View>
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:id="@+id/notification"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+      <TextView
+          android:layout_weight="1"
+
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="@string/notification"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+
+    </View>
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:id="@+id/friends"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+      <TextView
+          android:layout_weight="1"
+
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="@string/Friends"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+
+    </View>
+
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorTransparent"
+            android:layout_height="1sp">
+        </View>
+        <LinearLayout
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+
+
+      <TextView
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="@string/Help"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:id="@+id/tellfriend"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+      <TextView
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="@string/TellFriend"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:id="@+id/meotalk"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+      <TextView
+          android:layout_weight="1"
+
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="@string/AboutMeoTalk"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorTransparent"
+            android:layout_height="1sp">
+        </View>
+        <LinearLayout
+            android:id="@+id/syncphone"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+      <TextView
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="@string/syncPhoneBook"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTransparent"
+        android:layout_height="1sp">
+    </View>
+</LinearLayout>

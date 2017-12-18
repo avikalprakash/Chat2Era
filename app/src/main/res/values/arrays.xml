@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CountryName">
+    <item>India</item>
+    <item>Malasiya</item>
+    <item>Belgium</item>
+    <item>Bhutan</item>
+    <item>Belize</item>
+    <item>Bolivia</item>
+    <item>Belarus</item>
+    <item>Neptune</item>
+    </string-array>
+</resources>

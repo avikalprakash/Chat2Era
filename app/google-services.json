@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "623746523157",
+    "firebase_url": "https://erachat-c7092.firebaseio.com",
+    "project_id": "erachat-c7092",
+    "storage_bucket": "erachat-c7092.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623746523157:android:cbb881b292240fbc",
+        "android_client_info": {
+          "package_name": "com.example.lue.erachat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623746523157-uqp4iod118j2098gs9d4dk77c6dt7h93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lue.erachat",
+            "certificate_hash": "0d2f4030616be1753a16af78b91bc0ab4b5d90f5"
+          }
+        },
+        {
+          "client_id": "623746523157-pevqud8p657n28utuqcur3fan13n55d6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYcC0Mu2q-LGOXoPXBsmE13o_JmzfU8Cw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623746523157-pevqud8p657n28utuqcur3fan13n55d6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

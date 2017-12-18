@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circleImageView"
+            android:src="@drawable/icon_about"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <!-- app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp"-->
+        <com.wang.avi.AVLoadingIndicatorView
+            android:visibility="gone"
+
+            app:indicatorColor="@color/colorPrimaryDark"
+            android:id="@+id/avi"
+            android:gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            style="@style/AVLoadingIndicatorView.Large"
+            app:indicatorName="BallClipRotateIndicator" />
+        <TextView
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vijya Shalinee"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_alignTop="@+id/circleImageView"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:layout_toEndOf="@+id/circleImageView" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="project meting is very inportant"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_primary"
+        android:textAllCaps="false"
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:text="Add" />
+
+
+</RelativeLayout>

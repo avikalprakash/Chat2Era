@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.lue.erachat.Activity.AddFriend.SearchbyId">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/text_background_white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout5"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:hint="Search"
+            android:background="@drawable/button_white"
+            android:layout_width="276dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.66" />
+        <ImageView
+            android:id="@+id/Search"
+            android:layout_weight="0.34"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/icon_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="17dp"
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Friend Id"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true" />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:visibility="gone"
+        app:indicatorColor="@color/colorPrimaryDark"
+        android:id="@+id/avi"
+        android:gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        style="@style/AVLoadingIndicatorView.Large"
+        app:indicatorName="BallClipRotateIndicator" />
+
+    <ListView
+        android:id="@+id/UserList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView42" />
+</RelativeLayout>

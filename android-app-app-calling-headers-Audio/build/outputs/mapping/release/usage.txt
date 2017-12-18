@@ -1,0 +1,9 @@
+com.rebtel.repackaged.com.google.gson.DefaultDateTypeAdapter:
+    53:54:DefaultDateTypeAdapter(int)
+com.rebtel.repackaged.com.google.gson.FieldAttributes:
+    146:146:java.lang.Object get(java.lang.Object)
+    155:155:boolean isSynthetic()
+com.rebtel.repackaged.com.google.gson.Gson:
+    static final boolean DEFAULT_JSON_NON_EXECUTABLE
+com.rebtel.repackaged.com.google.gson.JsonParseException:
+    static final long serialVersionUID

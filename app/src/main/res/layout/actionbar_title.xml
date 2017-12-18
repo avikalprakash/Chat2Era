@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circleImageView"
+            android:src="@drawable/icon_about"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp">
+    <TextView
+        android:id="@+id/actionbarTitle"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@android:color/white"
+        android:text="Create Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView45"
+        android:layout_alignBottom="@+id/textView45"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:relative_time_prefix="Completed "
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/actionbarTitle" />
+
+  </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

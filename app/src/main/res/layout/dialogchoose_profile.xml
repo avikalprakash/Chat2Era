@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#AA000000"
+    android:layout_height="wrap_content">
+<TextView
+    android:textColor="@android:color/white"
+    android:layout_marginTop="65dp"
+    android:layout_marginLeft="17dp"
+    android:text="Take Photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView57"
+    android:layout_marginStart="17dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+    <TextView
+        android:textColor="@android:color/white"
+        android:text="Choose Gallery"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/textView58"
+        android:layout_alignBaseline="@+id/textView57"
+        android:layout_alignBottom="@+id/textView57"
+        android:layout_toRightOf="@+id/imageView40"
+        android:layout_toEndOf="@+id/imageView40"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <ImageView
+
+        android:id="@+id/imageView40"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/photo"
+        android:layout_above="@+id/textView58"
+        android:layout_alignLeft="@+id/textView57"
+        android:layout_alignStart="@+id/textView57" />
+
+    <ImageView
+
+        android:id="@+id/imageView42"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+
+        app:srcCompat="@drawable/gallery"
+        android:layout_above="@+id/textView58"
+        android:layout_alignLeft="@+id/textView58"
+        android:layout_alignStart="@+id/textView58"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView57"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/imageView42"
+        android:layout_toRightOf="@+id/imageView42"
+        app:srcCompat="@drawable/icon_profile_new"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/icon_profile_new"
+        android:layout_above="@+id/textView58"
+        android:layout_alignRight="@+id/imageView43"
+        android:layout_alignEnd="@+id/imageView43" />
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView44"
+        android:layout_alignStart="@+id/imageView44"
+        android:layout_below="@+id/imageView44"
+        android:text="Remove Photo" />
+</RelativeLayout>

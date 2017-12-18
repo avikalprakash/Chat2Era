@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lue.erachat.Activity.Task.AddTask">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/text_background_white"
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.13" />
+
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignRight="@+id/editText5"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:background="@drawable/text_background_white"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/text_background_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout5"
+        android:layout_below="@+id/editText6"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_alignRight="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.73"
+            android:background="@drawable/button_white"
+            android:hint="Status" />
+        <!--<ImageView
+            android:src="@drawable/icon_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />-->
+    </LinearLayout>
+
+    <TextView
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout5"
+        android:layout_alignStart="@+id/linearLayout5"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="26dp"
+        android:text="Start Date" />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/linearLayout5"
+        android:layout_alignLeft="@+id/linearLayout5"
+        android:layout_alignRight="@+id/linearLayout5"
+        android:layout_alignStart="@+id/linearLayout5"
+        android:layout_below="@+id/textView47"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="End Date"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_alignLeft="@+id/linearLayout8"
+        android:layout_alignStart="@+id/linearLayout8" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView49"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/grey"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Add Member"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_alignLeft="@+id/textView47"
+        android:layout_alignStart="@+id/textView47" />
+
+    <EditText
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/text_background_white"
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/linearLayout9"
+        android:layout_alignStart="@+id/linearLayout9"
+        android:layout_below="@+id/textView51"
+        android:layout_marginTop="16dp"
+
+        android:inputType="textPersonName"
+        android:text="All"
+        android:layout_alignRight="@+id/linearLayout9"
+        android:layout_alignEnd="@+id/linearLayout9"
+        android:layout_weight="0.08" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Add Tag"
+        android:layout_below="@+id/editText7"
+        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignStart="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editText7"
+        android:layout_alignLeft="@+id/textView52"
+        android:layout_alignRight="@+id/editText7"
+        android:layout_alignStart="@+id/textView52"
+        android:layout_below="@+id/textView52"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_background_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20dp"
+        android:text="All"
+        android:layout_weight="0.08" />
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

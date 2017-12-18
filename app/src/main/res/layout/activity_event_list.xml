@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lue.erachat.Activity.Task.TaskDetail">
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="22dp"
+        android:text="This project metting is very inportant . it will be held on 2 dec .everybody in this group has to come"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Assigned to"
+        android:layout_below="@+id/textView44"
+        android:layout_toLeftOf="@+id/name"
+        android:layout_toStartOf="@+id/name"
+        android:layout_marginRight="67dp"
+        android:layout_marginEnd="67dp" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_alignBaseline="@+id/textView46"
+        android:layout_alignBottom="@+id/textView46"
+        android:layout_alignRight="@+id/textView44"
+        android:layout_alignEnd="@+id/textView44" />
+
+    <Spinner
+        android:background="@drawable/spinner"
+        android:id="@+id/spinner3"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/textView44"
+        android:layout_alignStart="@+id/textView44"
+        android:layout_below="@+id/textView46"
+        android:layout_marginTop="44dp"
+        android:layout_toLeftOf="@+id/textView46"
+        android:layout_toStartOf="@+id/textView46" />
+
+    <Spinner
+        android:background="@drawable/spinner_one"
+
+        android:id="@+id/spinner4"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/spinner3"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/spinner3"
+        android:layout_toRightOf="@+id/spinner3" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner3"
+        android:layout_alignStart="@+id/spinner3"
+        android:layout_below="@+id/spinner3"
+        android:layout_marginTop="42dp"
+        android:text="Members" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView50"
+        android:layout_alignStart="@+id/textView50"
+        android:layout_below="@+id/textView50"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Time Left"
+        android:layout_below="@+id/textView53"
+        android:layout_alignRight="@+id/textView50"
+        android:layout_alignEnd="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView53"
+        android:layout_alignStart="@+id/textView53"
+        android:layout_below="@+id/textView54"
+        android:layout_marginTop="34dp"
+        android:text="TextView"
+        android:layout_alignRight="@+id/textView53"
+        android:layout_alignEnd="@+id/textView53" />
+
+</RelativeLayout>

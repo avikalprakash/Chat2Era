@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:src="@drawable/profile_big"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="43dp"
+        app:civ_border_color="#FF000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/Phone_number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/text_background_white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:text="Name" />
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/edit_name"
+                android:layout_width="20dp"
+                android:src="@drawable/edit"
+                android:layout_height="40dp"
+                android:layout_weight="0.01" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Whatever" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorTransparent"
+            android:layout_height="1dp">
+
+        </View>
+        <LinearLayout
+            android:background="@drawable/button_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:paddingLeft="10dp"
+
+            android:text="Status"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/edit_status"
+                android:layout_width="20dp"
+                android:src="@drawable/edit"
+                android:layout_height="45dp"
+                android:layout_weight="0.18" />
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/status"
+            android:text="Whatever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_primary"
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/qRCode"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+    <Button
+        android:textAllCaps="false"
+        android:background="@drawable/button_primary"
+        android:textColor="@android:color/white"
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="@string/deleteAccount"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+</RelativeLayout>

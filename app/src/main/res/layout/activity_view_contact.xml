@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lue.erachat.Activity.ViewContactActivity">
+<RelativeLayout
+    android:layout_margin="2dp"
+    android:background="@drawable/buttonwhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginBottom="20dp"
+        android:id="@+id/imageView46"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/icon_addmember"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:textSize="17sp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Name"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageView46"
+        android:layout_toEndOf="@+id/imageView46" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/buttonwhite"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            android:text="Mobile No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView64" />
+        <TextView
+            android:id="@+id/mobile"
+            android:padding="20dp"
+            android:text="7739763684"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView64"
+            android:layout_toEndOf="@+id/textView64"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp" />
+
+        <ImageView
+            android:id="@+id/imageView45"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/phone_icon_primary"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp" />
+    </RelativeLayout>
+
+    <Button
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_primary"
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Add"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_marginTop="33dp" />
+
+</RelativeLayout>

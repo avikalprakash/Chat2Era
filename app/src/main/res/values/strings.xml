@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">EraChat</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDhu28wCRphjMFHk90p36O-o6ARNn5Wxow</string>
+    <string name="verify_number">Verify your phone number</string>
+    <string name="email">email</string>
+    <string name="phnnumberwillbe">Phone numbers will be used for identification purpose and to prevent misuse of the services.It will not be shown to other users.To use MeoTalk,please verify your phone number.</string>
+    <string name="plsenterphnnumber">Please enter your phone number</string>
+    <string name="AgreetoTerms">Agree to Terms</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="viasms">We will a send verification code to this number via SMS. If you want to change your phone number.Please select \"Cancel\"</string>
+    <string name="enterVerificationCode">Please enter Verification Code sent via SMS</string>
+    <string name="resendCode">Didnt receive a text message ?</string>
+    <string name="resendverification">resend verification code</string>
+    <string name="do_you_agree">Do you agree to the terms of use and our privacy policy ? </string>
+    <string name="profile">profile</string>
+    <string name="notification">notification</string>
+    <string name="Friends">Friends</string>
+    <string name="Help">Help</string>
+    <string name="TellFriend">Tell a Friend</string>
+    <string name="AboutMeoTalk">About EraChat</string>
+    <string name="syncPhoneBook">sync Phonebook</string>
+    <string name="Phone_number">Phone Number</string>
+    <string name="qRCode">QR Code</string>
+    <string name="deleteAccount">Delete my Account</string>
+    <string name="tone">tone</string>
+    <string name="meotalknotification">Era Chat Notification</string>
+    <string name="sound">sound</string>
+    <string name="vibrate">vibrate</string>
+    <string name="blockedUsers">Blocked Users</string>
+    <string name="allow_others_to_add">allow others to add</string>
+    <string name="addFriend">Add Friend</string>
+    <string name="createGroup">Create Group</string>
+    <string name="eraLive">Era Live</string>
+    <string name="virtualGift">Virtual Gift</string>
+    <string name="eraPoint">EC Point</string>
+    <string name="eraChatPoint">EraChat Point</string>
+    <string name="radarSearch">Radar Search</string>
+    <string name="task">Tasks</string>
+    <string name="events">Events</string>
+    <string name="settings">settings</string>
+    <string name="aboutEraChat">About EraChat</string>
+    <string name="enterpriseAccount">Enterprise Account</string>
+    <string name="title_activity_dashbord">DashbordActivity</string>
+    <string name="title_contact">Contact</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_more">More</string>
+    <string name="Me">Me</string>
+    <string name="create">create</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="text_favorites">chat</string>
+    <string name="text_schedules">more</string>
+    <string name="text_music">contact</string>
+    <string name="cm">Me</string>
+
+    <string name="FCM_PREF">com.example.lue.erachat</string>
+    <string name="FCM_TOKEN">com.example.lue.erachat</string>
+    <string name="USER_PREF">com.example.lue.erachat</string>
+    <string name="USER_PREF_NAME">com.example.lue.erachat</string>
+    <string name="USER_PREF_STATUS">com.example.lue.erachat</string>
+    <string name="USER_ID">com.example.lue.erachat</string>
+    <string name="USER_NAME">userName</string>
+    <string name="USER_STATUS">com.example.lue.erachat</string>
+    <string name="action_wallpaper">wallpaper</string>
+    <string name="GPSAlertDialogMessage">GPSAlertDialogMessage</string>
+    <string name="GPSAlertDialogTitle">GPSAlertDialogTitle</string>
+    <string name="action_GroupList">GroupList</string>
+    <string name="show_invitation"> invitation</string>
+    <string name="blocked_users">Blocked Users</string>
+    <string name="action_clear_Chat">clear all chat</string>
+    <string name="action_block_user">Block user</string>
+    <string name="success">success</string>
+    <string name="item_removed">item_removed</string>
+    <string name="Cantcreatedirectorytosaveimage">Cantcreatedirectorytosaveimage</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#878686"
+    android:layout_height="240dp">
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:weightSum="1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout7">
+
+    <ImageView
+        android:layout_weight="0.25"
+        android:id="@+id/imageView17"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/imageView25"
+        app:srcCompat="@drawable/icon_info64x64" />
+
+      <ImageView
+          android:layout_weight="0.25"
+        android:id="@+id/imageView21"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/icon_addtask64x64" />
+
+    <ImageView
+        android:layout_weight="0.25"
+        android:id="@+id/imageView23"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/icon_folder64x64" />
+
+    <ImageView
+        android:layout_weight="0.25"
+        android:id="@+id/imageView24"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/icon_loc48x48"
+        android:layout_above="@+id/imageView25" />
+</LinearLayout>
+
+<LinearLayout
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3"
+    android:layout_below="@+id/linearLayout7"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:layout_weight="0.31"
+        android:id="@+id/textView22"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text=" Contact Info"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:textSize="13dp"
+        android:id="@+id/textView23"
+        android:layout_weight="0.23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:textSize="13dp"
+        android:layout_weight="0.22"
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Files"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:textSize="13dp"
+        android:layout_weight="0.22"
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignLeft="@+id/imageView28"
+        android:layout_alignStart="@+id/imageView28"
+
+        android:text="Location"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+   <LinearLayout
+       android:weightSum="1"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="18dp"
+       android:id="@+id/linearLayout6"
+       android:layout_below="@+id/linearLayout3"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true">
+
+       <ImageView
+           android:id="@+id/imageView25"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+           android:layout_weight="0.26"
+           app:srcCompat="@drawable/iconchoose_pic" />
+
+       <ImageView
+
+           android:layout_weight="0.24"
+           android:id="@+id/imageView26"
+           android:layout_width="40dp"
+           android:layout_height="30dp"
+           app:srcCompat="@drawable/icon_camera48x48" />
+
+       <ImageView
+           android:id="@+id/imageView27"
+           android:layout_width="40dp"
+           android:layout_height="30dp"
+           android:layout_weight="0.26"
+           app:srcCompat="@drawable/icon_video72x72" />
+
+       <ImageView
+           android:layout_weight="0.25"
+           android:id="@+id/imageView28"
+           android:layout_width="40dp"
+           android:layout_height="30dp"
+           app:srcCompat="@drawable/icon_takevideo64x64" />
+
+   </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linearLayout6"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:weightSum="1">
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="12.5dp"
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView21"
+
+        android:layout_toEndOf="@+id/textView23"
+        android:layout_toRightOf="@+id/textView23"
+        android:text="Choose Photo"
+        android:textColor="@android:color/white"
+        android:layout_weight="0.27" />
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView27"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_toEndOf="@+id/textView22"
+        android:layout_toRightOf="@+id/textView22"
+        android:text="Take Photo"
+        android:textColor="@android:color/white"
+        android:layout_weight="0.27" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView24"
+        android:layout_alignStart="@+id/imageView24"
+        android:layout_below="@+id/imageView24"
+        android:gravity="center"
+        android:text="Choose Video"
+        android:textColor="@android:color/white"
+        android:textSize="12.5dp"
+        android:layout_weight="0.22" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView23"
+        android:layout_alignStart="@+id/imageView23"
+        android:layout_below="@+id/imageView23"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="Take Video"
+        android:textColor="@android:color/white"
+        android:textSize="13dp"
+        android:layout_weight="0.28" />
+</LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff751a</color>
+    <color name="colorPrimaryDark">#363635</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTransparent">#AA000000</color>
+    <color name="grey">#C0C0C0</color>
+    <color name="buttonfocus">#ff6600</color>
+    <color name="selectlist">#ccff751a</color>
+
+    <color name="cancelbtn">#9ab0b6</color>
+    <color name="cancelbtnfocus">#54575a</color>
+    <color name="text_color">#54575a</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorGray">#ccc</color>
+    <color name="recorder_bg">#F4511E</color>
+
+
+
+    <color name="sinch_purple">#ff63029d</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="greyish">#fff2f1f2</color>
+</resources>

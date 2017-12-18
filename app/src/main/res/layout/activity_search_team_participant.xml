@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.lue.erachat.Activity.CreateTeam.SearchTeamParticipant">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:background="@drawable/text_background_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout5">
+        <ImageView
+            android:src="@drawable/icon_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:hint="Search"
+            android:background="@drawable/button_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/addteammember"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/linearLayout5">
+
+    </ListView>
+</RelativeLayout>

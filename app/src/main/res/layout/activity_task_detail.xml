@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lue.erachat.Activity.Task.TaskDetail">
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:text="This project metting is very inportant . it will be held on 2 dec .everybody in this group has to come" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Assigned to"
+        android:layout_below="@+id/textView44"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_alignBaseline="@+id/textView46"
+        android:layout_alignBottom="@+id/textView46"
+        android:layout_alignLeft="@+id/button10"
+        android:layout_alignStart="@+id/button10"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <Spinner
+
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/spinner"
+        android:layout_below="@+id/textView46"
+        android:layout_alignLeft="@+id/textView48"
+        android:layout_alignStart="@+id/textView48" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/spinner_one"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Activity"
+        android:layout_below="@+id/spinner"
+        android:layout_alignLeft="@+id/textView44"
+        android:layout_alignStart="@+id/textView44" />
+
+    <EditText
+        android:background="@drawable/text_background_white"
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView48"
+        android:layout_alignStart="@+id/textView48"
+        android:layout_below="@+id/textView48"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Write a Comment"
+        android:layout_alignRight="@+id/textView44"
+        android:layout_alignEnd="@+id/textView44" />
+
+    <Button
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_primary"
+        android:id="@+id/button10"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="11dp"
+        android:text="send" />
+    <ListView
+        android:layout_below="@+id/button10"
+        android:id="@+id/ListParticipent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"></ListView>
+</RelativeLayout>

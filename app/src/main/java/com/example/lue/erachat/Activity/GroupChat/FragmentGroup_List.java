@@ -1,0 +1,231 @@
+package com.example.lue.erachat.Activity.GroupChat;
+
+
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.preference.PreferenceManager;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import com.example.lue.erachat.Activity.Adaptor.GroupList_Adaptor;
+import com.example.lue.erachat.Activity.CreateTeam.SearchTeamParticipant;
+import com.example.lue.erachat.Activity.Fragment.FragmentGroupList;
+import com.example.lue.erachat.Activity.Models.Messages;
+import com.example.lue.erachat.Activity.Other.Utils;
+import com.example.lue.erachat.Activity.database.DatabaseHandler;
+import com.example.lue.erachat.R;
+import com.wang.avi.AVLoadingIndicatorView;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+/**
+ * Created by lue on 09-06-2017.
+ */
+
+public class FragmentGroup_List extends Fragment {
+LinearLayout lblinvite;
+    ListView listView_group;
+    private static final int SHOW_PROCESS_DIALOG = 1;
+    private static final int HIDE_PROCESS_DIALOG = 0;
+    MyAsync myAsync;
+    AVLoadingIndicatorView dialog;
+    Dialog dialog1;
+    DatabaseHandler databaseHandler;
+    GroupList_Adaptor groupList_adaptor;
+    ArrayList<Messages>GroupList=new ArrayList<>();
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_grouplist, container, false);
+
+
+
+
+    }
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        dialog=(AVLoadingIndicatorView)view.findViewById(R.id.avi) ;
+        listView_group=(ListView)view.findViewById(R.id.group_list);
+        myAsync=new MyAsync();
+        listView_group.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
+                Intent intent=new Intent(getActivity(),GroupDetail.class);
+                intent.putExtra("GroupId",GroupList.get(i).getGroupId());
+                startActivity(intent);
+            }
+        });
+
+        loadData();
+
+    }
+
+    //Handler
+    Handler handler=new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message message) {
+            switch(message.what){
+                case SHOW_PROCESS_DIALOG :
+                    dialog.show();
+                    break;
+                case HIDE_PROCESS_DIALOG :
+                    dialog.hide();
+
+                    break;
+            }
+            return false;
+        }
+    });
+
+
+
+
+    class MyAsync extends AsyncTask<String,Void,String> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+            handler.sendEmptyMessage(SHOW_PROCESS_DIALOG);
+            String s="";
+            String myuser_id = PreferenceManager.getDefaultSharedPreferences(getActivity()).getString("myuserid", "");
+            try {
+                HttpClient httpClient = new DefaultHttpClient();
+                HttpPost httpPost = new HttpPost("http://erachat.condoassist2u.com/api/getUserCreatedGroups");
+                httpPost.setHeader("Content-type", "application/json");
+
+                JSONObject jsonObject= new JSONObject();
+
+                jsonObject.accumulate("group_admin",myuser_id);
+                Log.d("jcenjn"," "+myuser_id);
+
+                StringEntity stringEntity= new StringEntity(jsonObject.toString());
+                httpPost.setEntity(stringEntity);
+                HttpResponse httpResponse = httpClient.execute(httpPost);
+                HttpEntity httpEntity = httpResponse.getEntity();
+                s = readResponse(httpResponse);
+                Log.d("tag11"," "+s);
+            } catch (Exception exception) {
+                exception.printStackTrace();
+            }
+            return s;
+
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            handler.sendEmptyMessage(HIDE_PROCESS_DIALOG);
+            Log.d("onPostExcute", "" + s);
+            JSONObject jsonObject1 = null;
+            try {
+                jsonObject1=new JSONObject(s);
+                String message=jsonObject1.getString("message");
+                JSONArray jsonArray=new JSONArray(message);
+                for (int i=0;i<jsonArray.length();i++){
+
+                   JSONObject jsonObject=jsonArray.getJSONObject(i);
+                    Messages messages=new Messages();
+                    messages.setGroupId(jsonObject.getString("group_id"));
+                    messages.setGroupName(jsonObject.getString("group_name"));
+                    messages.setGroupIcon(jsonObject.getString("photo"));
+                    messages.setGroupCreatedDate(jsonObject.getString("created_at"));
+                    GroupList.add(messages);
+                }
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            if(GroupList.size()>0){
+                groupList_adaptor=new GroupList_Adaptor(getActivity(),GroupList);
+                listView_group.setAdapter(groupList_adaptor);
+            }
+
+
+        }
+    }
+    public void  loadData(){
+        myAsync=new MyAsync();
+
+        if (Utils.isNetworkAvailable(getActivity()) && myAsync.getStatus()!= AsyncTask.Status.RUNNING)
+        {
+            myAsync.execute();
+        }else{
+            Toast.makeText(getActivity(),"NO net avalable",Toast.LENGTH_LONG).show();
+        }
+    }
+
+
+    private String readResponse(HttpResponse httpResponse) {
+        InputStream is=null;
+        String return_text="";
+        try {
+            is=httpResponse.getEntity().getContent();
+            BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(is));
+            String line="";
+            StringBuffer sb=new StringBuffer();
+            while ((line=bufferedReader.readLine())!=null)
+            {
+                sb.append(line);
+            }
+            return_text=sb.toString();
+            Log.d("return_text",""+return_text);
+        } catch (Exception e)
+        {
+
+        }
+        return return_text;
+
+
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        if ( myAsync.getStatus()== AsyncTask.Status.RUNNING)
+        {
+            myAsync.cancel(true);
+        }
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        if ( myAsync.getStatus()== AsyncTask.Status.RUNNING)
+        {
+            myAsync.cancel(true);
+        }
+    }
+
+}

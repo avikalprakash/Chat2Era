@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.lue.erachat.Activity.MainActivity"
+    android:orientation="vertical">
+
+
+<!--
+    <Spinner
+        android:layout_marginTop="5dp"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/citylist"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/text_background_white"
+        android:paddingLeft="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />-->
+<EditText
+    android:textColor="#808080"
+    android:clickable="false"
+    android:cursorVisible="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:paddingLeft="14dp"
+    android:text="Malaysia(+60)"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/text_background_white"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phonenumber"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/citylist"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/text_background_white"
+            android:hint="Mobile Number"
+
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingLeft="14dp"
+            android:textColor="#808080"
+            android:textColorHint="#9da9b0"
+            android:textStyle="bold">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/email_reg"
+            android:layout_width="fill_parent"
+
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/phonenumber"
+            android:background="@drawable/text_background_white"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:paddingLeft="14dp"
+            android:textColor="#808080"
+            android:textColorHint="#9da9b0"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:textStyle="normal"
+
+        android:id="@+id/reginstr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/phnnumberwillbe"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#808080"
+        android:layout_below="@+id/verifylayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/verifylayout"
+        android:background="@drawable/button_primary"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true">
+        <TextView
+
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:text="@string/verify_number"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

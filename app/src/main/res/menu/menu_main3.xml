@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lue.erachat.Activity.CreateTeam.Main3Activity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_wallpaper"
+        android:orderInCategory="100"
+        android:title="@string/action_wallpaper"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clear_Chat"
+        android:orderInCategory="100"
+        android:title="@string/action_clear_Chat"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_blockuser"
+        android:orderInCategory="100"
+        android:title="@string/action_block_user"
+        app:showAsAction="never" />
+</menu>

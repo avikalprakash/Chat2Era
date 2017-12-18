@@ -105,8 +105,7 @@ public class DashbordActivity extends com.sinch.android.rtc.sample.calling.BaseA
         }, 2000);
         context=this;
         alert = new android.support.v7.app.AlertDialog.Builder(this);
-      //  progressDialog = new ProgressDialog(this);
-      //  progressDialog.setMessage("Please wait for location");
+
         permission = new MMPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
         if (permission.result == -1 || permission.result == 0) {
             try {

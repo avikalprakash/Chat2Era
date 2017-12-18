@@ -105,7 +105,7 @@ public class DashbordActivity extends com.sinch.android.rtc.sample.calling.BaseA
         }, 2000);
         context=this;
         alert = new android.support.v7.app.AlertDialog.Builder(this);
-
+//
         permission = new MMPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
         if (permission.result == -1 || permission.result == 0) {
             try {

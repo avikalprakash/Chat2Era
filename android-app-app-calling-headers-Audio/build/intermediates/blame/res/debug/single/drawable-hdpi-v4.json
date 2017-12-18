@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Fujitsu\\.android\\build-cache\\9a2afb3627e24ed1fba12eb32ff016d61c431b91\\output\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\big_red_pressed.png",
-        "source": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\res\\drawable-hdpi\\big_red_pressed.png"
-    },
-    {
         "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
         "source": "C:\\Users\\Fujitsu\\.android\\build-cache\\9a2afb3627e24ed1fba12eb32ff016d61c431b91\\output\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\big_red_pressed.png",
+        "source": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\res\\drawable-hdpi\\big_red_pressed.png"
     },
     {
         "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\big_red_normal.png",
@@ -92,12 +92,12 @@
         "source": "C:\\Users\\Fujitsu\\.android\\build-cache\\9a2afb3627e24ed1fba12eb32ff016d61c431b91\\output\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\Era Chat\\EraChat2\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\small_green_normal.png",
-        "source": "F:\\Era Chat\\EraChat2\\android-app-app-calling-headers-Audio\\res\\drawable-hdpi\\small_green_normal.png"
-    },
-    {
         "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
         "source": "C:\\Users\\Fujitsu\\.android\\build-cache\\9a2afb3627e24ed1fba12eb32ff016d61c431b91\\output\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Era Chat\\EraChat2\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\small_green_normal.png",
+        "source": "F:\\Era Chat\\EraChat2\\android-app-app-calling-headers-Audio\\res\\drawable-hdpi\\small_green_normal.png"
     },
     {
         "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_normal.png",

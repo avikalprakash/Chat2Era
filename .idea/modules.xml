@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EraChat.iml" filepath="$PROJECT_DIR$/EraChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EraChat2.iml" filepath="$PROJECT_DIR$/EraChat2.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-app-app-calling-headers-Audio/android-app-app-calling-headers-Audio.iml" filepath="$PROJECT_DIR$/android-app-app-calling-headers-Audio/android-app-app-calling-headers-Audio.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

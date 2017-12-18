@@ -16,12 +16,12 @@
         "source": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\res\\drawable\\button_end.xml"
     },
     {
-        "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_about.png",
-        "source": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\res\\drawable\\icon_about.png"
-    },
-    {
         "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
         "source": "C:\\Users\\Fujitsu\\.android\\build-cache\\9a2afb3627e24ed1fba12eb32ff016d61c431b91\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_about.png",
+        "source": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\res\\drawable\\icon_about.png"
     },
     {
         "merged": "F:\\Era Chat\\EraChat\\android-app-app-calling-headers-Audio\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_icon.png",

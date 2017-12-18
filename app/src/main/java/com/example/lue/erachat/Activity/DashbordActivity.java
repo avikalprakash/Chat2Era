@@ -86,7 +86,7 @@ public class DashbordActivity extends com.sinch.android.rtc.sample.calling.BaseA
     boolean isLocation;
     String user_id;
     String userName;
-    //private Boolean firstTime = null;
+
     private static boolean RUN_ONCE = true;
     public static final String MY_NUMBER = "myNumber";
     private static final String LOCATION_SEND_URL = "http://erachat.condoassist2u.com/api/setLocation";

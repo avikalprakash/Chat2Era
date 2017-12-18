@@ -76,6 +76,7 @@ public class DashbordActivity extends com.sinch.android.rtc.sample.calling.BaseA
     String latitude = "";
     String longitude = "";
     double Latitude;
+
     double Longitude;
     MMPermission permission;
     LocationManager mlocManager;
